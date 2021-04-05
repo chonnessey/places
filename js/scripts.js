@@ -34,6 +34,11 @@ console.log(newPlace);
     //$(".new-place").append("<div>" + "<ul>" + "<li>" + Object.values(newPlace));
       Object.values(newPlace).forEach(element => {
         $(".new-place").append("<li>" + element + "</li>");
-      });
+      });    
+  });
+  $(".click").click(function() {
+    Object.values(place2).forEach(element => {
+      $(".mexico").append("<li>" + element + "</li>");
+    });
   });
 });
