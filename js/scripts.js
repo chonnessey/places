@@ -1,4 +1,4 @@
-function Place() {
+function Place(name, location, landmarks, season, fact) {
   this.name = name;
   this.location = location;
   this.landmarks = landmarks;
