@@ -11,3 +11,22 @@ let place1 = new Place("Milan", "Italy", ["The Duomo", "San Siro", "La Scala"], 
 let place2 = new Place("Sinaloa", "Mexico", ["Adrian's gma's house", "Malecon"], "Summer", "Mazatlan has the longest Boulevard in Mexico.");
 
 let place3 = new Place("Squamish", "Canada", ["The Chief", "Brohm Lake"], "Summer", "Squamish has some of the best climbing in North America");
+
+
+
+
+
+
+
+$(document).ready(function() {
+  $("#places").submit(function(event) {
+    event.preventDefault();
+    const inputName = $("#name").val();
+    const inputLocation = $("#location").val();
+    const inputLandmarks = $("#landmarks").val();
+    const inputSeason = $("#season").val();
+    const inputFact = $("#fact").val();
+    let newPlace = new Place(inputName, inputLocation, inputLandmarks, inputSeason, inputFact);
+    
+  })
+})
