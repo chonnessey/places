@@ -6,7 +6,7 @@ function Place(name, location, landmarks, season, fact) {
   this.fact = fact;
 }
 
-Place.prototype.display()
+
 
 // let place1 = new Place("Milan", "Italy", ["The Duomo", "San Siro", "La Scala"], "Winter", "Has the most skyscrapers in Italy!");
 
@@ -32,8 +32,8 @@ $(document).ready(function() {
 console.log(newPlace);
     // $(".new-place").append("<div>" + "<ul>" + "<li>" + inputName + "<li>" + inputLocation + "<li>" + inputLandmarks + "<li>" + inputSeason + "<li>" + inputFact)
     //$(".new-place").append("<div>" + "<ul>" + "<li>" + Object.values(newPlace));
-      newPlace.forEach(element => {
-        $(".new-place").append("<li>" + element + "</li>")
+      Object.values(newPlace).forEach(element => {
+        $(".new-place").append("<li>" + element + "</li>");
       });
   });
 });
